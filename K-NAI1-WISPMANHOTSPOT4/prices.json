@@ -1,0 +1,82 @@
+{
+    "name": "hotspotlogin",
+    "description": "Use this to Update your price and Logos on the customer interface.",
+    "title": "KRISTEC DEVELOPERS",
+    "wifi_name": "KRISTEC DEVELOPERS",
+    "developers": "Technox Solutions",
+    "server": "",
+    "logo": "logo-KRISTECVLAN.png",
+
+    "lnmoapi": "https://kristec.wispman.net/index.php?_route=mpesa/post",
+    "lnmoapi2": "https://kristec.wispman.net/index.php?_route=mpesa/code",
+    "lnmoapi3": "https://kristec.wispman.net/index.php?_route=mpesa/stkquery",
+    "lnmoapi4": "https://kristec.wispman.net/system/cron.php",
+    "lnmoapi5": "https://kristec.wispman.net/index.php?_route=mpesa/reconnect",
+    "shortcode": "0",
+    
+    "router": "K-NAI1",
+    "paybill": 0,
+    "paybill_no": "0",
+    "quota": [{
+            "quota_limit": "15Hours",
+            "price": "25",
+            "package":"6GB",
+            "duration_limit": "15 hours",
+            "speeds": "Speed 3mbps",
+            "color": "blue"
+        },
+        {
+            "quota_limit": "15Hours",
+            "price": "40",
+            "package":"Unlimited",
+            "duration_limit": "15 Hours",
+            "speeds": "Speed 3mbps",
+            "color": "red"
+        },
+        {
+            "quota_limit": "24Hours",
+            "price": "50",
+            "package":"10GB",
+            "duration_limit": "24 Hours",
+            "speeds": "Speed 5mbps",
+            "color": "red"
+        },
+        {
+            "quota_limit": "24Hours",
+            "price": "50",
+            "package":"Unlimited",
+            "duration_limit": "24hours",
+            "speeds": "Speed 5mbps",
+            "color": "red"
+        }
+       ],
+    "duration": [
+        {
+            "quota_limit": "7 Days",
+            "price": "230",
+            "package":"30GB",
+            "duration_limit": "7 days",
+            "speeds": "MAX 7mbps",
+            "color": "red"
+        },
+        {
+            "quota_limit": "7 Days",
+            "price": "310",
+            "package":"Unlimited",
+            "duration_limit": "7 days",
+            "speeds": "MAX 7mbps",
+            "color": "red"
+        }
+        
+      ],
+      "monthly":[
+        {
+            "quota_limit": "1 Month",
+            "price": "1000",
+            "package":"Unlimited",
+            "duration_limit": "30 days",
+            "speeds": "MAX 7mbps",
+            "color": "red"
+         }
+      ]
+   }
