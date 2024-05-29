@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    
 
     <style>
         #err:empty {
@@ -295,7 +296,7 @@
                     </div>
 
                 </div>
-                <div class=" text-center">
+                <div class="border-b my-10 text-center">
                     <!-- <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"
                         class="btn btn-logout text-space">FREE TRIAL</a>  -->
                     <div><br>
@@ -324,7 +325,6 @@
                             <div id="time_limit222" class="flex justify-center "></div>
                             
                         </div>
-                        <hr style="color: #000;" size="5px">
                         <div class="login">
 
 
@@ -333,56 +333,61 @@
 
                         </div>
                     </div>
-
-
                 </div>
 
-
+                <!-- recnnect -->
                 <div class="cd">
                     <div class="card2">
                         <p class=" text-center font-gray font-bold" style="font-size: 25px;"><small>Reconnect account</small></p>
                         <p class="text-center text-black">Plese enter mpesa code from the payment you made eg:QAH9QWWZRR
                         </p>
                         <div>
-                            <input autofocus type="text" id="code2" name="code2" class="input input-alt"
-                            placeholder="Enter Mpesa Code you paid with" />
+                            <input autofocus type="text" id="code2" name="code2" class="code"
+                            placeholder="Enter Mpesa Code received " />
                             <span class="input-border input-border-alt"></span>
                         </div>
                         
                         <input hidden type="text" id="mac2" value='$(mac)'>
-                        <button class="btn btn-reconnect text-space" id="reconnect-form">Reconnect </button>
+                        <button class="btn-reconnect text-space" id="reconnect-form">Reconnect </button>
                     </div>
                 </div>
                 
             </div>
 
-            <div class=" login">
-                <p class=" text-center text-white"><small>Voucher recharge</small></p>
-                <p class="text-center text-white">(Call admin for voucher recharge incase your payment is not
-                    successful)</p>
-                <input autofocus type="text" id="code" name="code" class="voucher" placeholder="Enter voucher code" />
+        </div>
+        <!-- login and voucher recharge -->
+        <div class="flex gap-10 justify-between p-30">
+            <div class=" login border-right pr-30 w-half">
+                <p class=" text-center font-gray font-bold" style="font-size: 25px;"><small>Voucher recharge</small></p>
+                <p class="text-center text-black">Call admin for voucher recharge incase your payment is not
+                    successful</p>
+                <input autofocus type="text" id="code" name="code" class="code m-20" placeholder="Enter voucher code" />
                 <input hidden type="text" id="mac2" value='$(mac)'>
-                <button class="btn btn-activate text-space" id="voucher-form">Activate voucher </button>
+                <button class="btn btn-login text-space m-20" id="voucher-form">Activate voucher </button>
+            </div>
+
+            <div class="login card2 w-half">
+
+                <form class="login" name="login" action="$(link-login-only)" method="post"> <input type="hidden" name="dst"
+                        value="$(link-orig)" />
+                    <!-- <p class="logo-area text-center" id="wifi_name"></p> -->
+                    <p class=" text-center font-gray font-bold" style="font-size: 25px;"><small>Login into account</small></p>
+
+                    <p class="text-center text-black">Please enter your username plus password to login.</p>
+                    <input type="hidden" name="popup" value="true" />
+                    <div class="">
+                        <hr />
+                        <input type="text" name="username" class="code" placeholder="Username" />
+                        <input type="password" name="password" class="code" placeholder="Password" />
+    
+    
+                    </div>
+                    <button type="submit" class="btn btn-login text-space"> <b>LOGIN</b></button>
+                </form>
             </div>
         </div>
 
-        <div class="login card2">
-
-            <form class="login" name="login" action="$(link-login-only)" method="post"> <input type="hidden" name="dst"
-                    value="$(link-orig)" />
-                <p class="logo-area text-center" id="wifi_name"></p>
-                <p class="text-center text-black">Please enter your username plus password to login.)</p>
-                <input type="hidden" name="popup" value="true" />
-                <div class="s-login">
-                    <hr />
-                    <input type="text" name="username" class="username" placeholder="Username" />
-                    <input type="password" name="password" class="password" placeholder="Password" />
-
-
-                </div>
-                <button type="submit" class="btn btn-login text-space"> <b>LOGIN</b></button>
-            </form>
-        </div>
+        
 
 
 
