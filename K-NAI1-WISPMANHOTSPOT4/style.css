@@ -118,7 +118,16 @@ a:hover {
     padding: 10px 0;
     cursor: pointer;
 }
-
+.packages-monthly{
+    width: 350px;
+    height: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+}
 .packages-weekly {
     width: 350px;
     height: auto;
@@ -129,21 +138,50 @@ a:hover {
     padding: 10px 0;
     cursor: pointer;
 }
-
+.pack{
+    display: flex;
+    justify-content: start;
+}
+.status-info{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 30px;
+    width: 100%;
+    text-align: left;
+}
 .packages:hover,
 .packages-weekly:hover {
     transform: scale(1.05);
     transition: .2s ease-out;
 
 }
-
+.head{
+    color: orangered;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.price_quota{
+    display: flex;
+    justify-content: center;
+}
+.time_limit{
+    display: flex;
+    justify-content: start;
+}
 .limit-text {
     font-weight: bold;
     font-size: 20px;
     padding: 3px;
     margin: 0;
 }
-
+.inst{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: start;
+}
 .package-text {
     color: blue;
     font-weight: 800;
@@ -168,7 +206,12 @@ a:hover {
     margin: 0;
     font-size: 18px;
 }
-
+.package-category{
+    text-align: start;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
 .speed-text-weekly {
     color: blue;
     padding: 3px;
@@ -207,6 +250,9 @@ a:hover {
 .w-full{
     width: 100%;
 }
+.w-half{
+    width: 50%;
+}
 .flex {
     display: flex
 }
@@ -219,6 +265,9 @@ a:hover {
 }
 .justify-center {
     justify-content: center
+}
+.items-center{
+    align-items: center;
 }
 .justify-between{
     justify-content: space-between;
@@ -264,7 +313,9 @@ a:hover {
 .marg-o {
     margin-top: 2px;
 }
-
+.text-begin{
+    text-align: start;
+}
 .marg-oo {
     margin: 5px;
 }
@@ -288,7 +339,12 @@ a:hover {
 .text-green {
     color: #00c220;
 }
-
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
 .small {
     font-size: 80%;
     font-style: italic;
@@ -305,12 +361,22 @@ a:hover {
 .text-left {
     text-align: left;
 }
-
+.text-50{
+    font-size: 30px;
+}
+.text-25{
+    font-size: 25px;
+}
+.text-20{
+    font-size: 20px;
+}
 .mx-auto {
     margin-left: auto;
     margin-right: auto
 }
-
+.bg-green{
+    background-color: #39b54a;
+}
 .cd {
     display: flex;
     justify-content: center;
@@ -386,8 +452,11 @@ a:hover {
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
-    width: 50%;
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .shadow {
@@ -943,7 +1012,7 @@ hr {
     body {
         background-color: #ffff;
         background-image: url("background.png");
-        background: #000000;
+        background: rgb(126, 208, 255);
         background-size: cover;
         /* background-repeat: no-repeat; */
         padding-top: 0px;
@@ -971,6 +1040,36 @@ hr {
         margin-bottom: 20px;
         max-width: 380px;
     }
+    .package-weekly{
+        width: 500px;
+    }
+    .head{
+        font-size: 25px;
+        padding: 5px;
+    }
+    .card3{
+        width: 70%;
+    }
+    .card2{
+        width: 100%;
+    }
+    .package-category{
+        font-size: 20px;
+        
+    }
+    .packages{
+        margin: 5px;
+    }
+    .voucher-login{
+        flex-direction: column;
+    } 
+    .voucher{
+        border: none;
+    }
+    .account,.voucher{
+        width: 100%;
+    }
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -994,15 +1093,36 @@ hr {
         background: rgba(255, 255, 255, 0.17);
         max-width: 380px;
     }
-
+    .price_quota{
+        flex-direction: column;
+    }
+    .time_limit{
+        flex-direction: column;
+    }
     .panel-second {
         max-width: 300px;
     }
-
+    .card3{
+        width: 70%;
+    }
+    .card2{
+        width: 100%;
+    }
+    .head{
+        font-size: 25px;
+        padding: 5px;
+    }
     .panel {
         margin-top: -40px;
         margin-bottom: 20px;
         max-width: 380px;
+    }
+  
+    .account,.voucher, .packages-monthly{
+        width: 100%;
+    }
+    .packages-weekly, .packages{
+        width: auto;
     }
 }
 
@@ -1033,6 +1153,31 @@ hr {
         top: 15px;
         right: 35px;
     }
+    .price_quota{
+        flex-direction: column;
+    }
+    .time_limit{
+        flex-direction: column;
+    }
+    .card3{
+        width: 70%;
+    }
+    .card2{
+        width: 100%;
+    }
+    .voucher{
+        border: none;
+    }
+    .head{
+        font-size: 25px;
+        padding: 5px;
+    }
+    .account,.voucher, .packages-monthly{
+        width: 100%;
+    }
+    .packages-weekly, .packages{
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1052,14 +1197,38 @@ hr {
         background: rgba(255, 255, 255, 0.17);
         max-width: 380px;
     }
-
+    .price_quota{
+        flex-direction: column;
+    }
+    .time_limit{
+        flex-direction: column;
+    }
     .panel-second {
         max-width: 3000px;
     }
-
+    .head{
+        font-size: 25px;
+        padding: 5px;
+    }
     .panel {
         margin-top: -40px;
         margin-bottom: 20px;
         max-width: 380px;
     }
+    .card3{
+        width: 70%;
+    }
+    .card2{
+        width: 100%;
+    }
+    .voucher{
+        border: none;
+    }
+    .account,.voucher, .packages-monthly{
+        width: 100%;
+    }
+    .packages-weekly, .packages{
+        width: auto;
+    }
+    
 }

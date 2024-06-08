@@ -19,7 +19,7 @@
     "paybill_no": "0",
     "quota": [{
             "quota_limit": "15Hours",
-            "price": "25",
+            "price": "1",
             "package":"6GB",
             "duration_limit": "15 hours",
             "speeds": "Speed 3mbps",
@@ -56,7 +56,7 @@
             "price": "230",
             "package":"30GB",
             "duration_limit": "7 days",
-            "speeds": "MAX 7mbps",
+            "speeds": "Speed 7mbps",
             "color": "red"
         },
         {
@@ -64,7 +64,7 @@
             "price": "310",
             "package":"Unlimited",
             "duration_limit": "7 days",
-            "speeds": "MAX 7mbps",
+            "speeds": "Speed 7mbps",
             "color": "red"
         }
         
@@ -75,7 +75,7 @@
             "price": "1000",
             "package":"Unlimited",
             "duration_limit": "30 days",
-            "speeds": "MAX 7mbps",
+            "speeds": "Speed 7mbps",
             "color": "red"
          }
       ]

@@ -13,8 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet"><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-    
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
     <style>
         #err:empty {
@@ -279,19 +280,19 @@
 
             <div class="md:w-2/3 w-full">
                 <div style="display: flex; justify-content: start;">
-                    <img src="logo-KRISTECVLAN.png" style="width: 100px; height: 100px;position: fixed;">
+                    <img src="logo-KRISTECVLAN.png" style="width: 100px; height: 100px;">
                 </div>
-                <p class="text-center"
-                    style="color: orangered; padding: 20px; font-family: Merriweather; font-size: 35px; font-weight: bold;"
-                    id="wifi_name"></p>
+                <p class="text-center head" style="font-family: Merriweather;" id="wifi_name"></p>
                 <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                     <h6 class="text-center font-gray" style="font-size: 25px;">How To Purchase:</h6>
                     <div class="card3" style="display: flex; flex-direction: column; justify-content: center;">
-                        <h6 class="text-black text-left">1.Tap on your preffered package.</h6>
-                        <h6 class="text-black text-left">2.Enter your phone number</h6>
-                        <h6 class="text-black text-left">3.Click "PAY NOW"</h6>
-                        <h6 class="text-black text-left">4.Enter your m-pesa pin, wait for 30sec for mpesa
-                            authentication.</h6>
+                        <div class="inst">
+                            <span class="text-black">1.Tap on your preffered package.</span>
+                            <span class="text-black">2.Enter your phone number</span>
+                            <span class="text-black">3.Click "PAY NOW"</span>
+                            <div class="text-black text-begin">4.Enter your m-pesa pin, wait for 30sec for mpesa authentication.</div>
+                        </div>
+
                         <!-- <p id="paytype" class="text-red mt-2"></p> -->
                     </div>
 
@@ -308,22 +309,25 @@
 
                             <h2 class=" text-center text-bold"><small style="color: blue;">Select a Package</small></h2>
 
-                            <div class="text-black" style="display: flex; justify-content: start;">
-                                <span style="text-align: start;padding: 10px 20px; font-size: 25px;">Hourly Packages</span>
+                            <div class="text-black pack">
+                                <span class="package-category">Hourly
+                                    Packages</span>
                             </div>
-                            <div id="price_quota" class="flex justify-center"></div>
-                            <div class="text-black" style="display: flex; justify-content: start;">
-                                <span style="text-align: start;padding: 10px 20px; font-size: 25px;">Weekly Packages</span>
+                            <div id="price_quota" class="price_quota"></div>
+                            <div class="text-black pack">
+                                <span class="package-category">Weekly
+                                    Packages</span>
                             </div>
-                            <div id="time_limit" class="flex justify-start "></div>
-                            <div class="text-black" style="display: flex; justify-content: start;">
-                                <span style="text-align: start;padding: 10px 20px; font-size: 25px;">Monthly Packages</span>
+                            <div id="time_limit" class="time_limit"></div>
+                            <div class="text-black pack">
+                                <span class="package-category">Monthly
+                                    Packages</span>
                             </div>
                             <div id="month_limit" class="flex justify-start "></div>
                             <div id="price_quota2" class="flex justify-center "></div>
                             <div id="time_limit22" class="flex justify-center "></div>
                             <div id="time_limit222" class="flex justify-center "></div>
-                            
+
                         </div>
                         <div class="login">
 
@@ -338,26 +342,27 @@
                 <!-- recnnect -->
                 <div class="cd">
                     <div class="card2">
-                        <p class=" text-center font-gray font-bold" style="font-size: 25px;"><small>Reconnect account</small></p>
+                        <p class=" text-center font-gray font-bold" style="font-size: 25px;"><small>Reconnect
+                                account</small></p>
                         <p class="text-center text-black">Plese enter mpesa code from the payment you made eg:QAH9QWWZRR
                         </p>
                         <div>
                             <input autofocus type="text" id="code2" name="code2" class="code"
-                            placeholder="Enter Mpesa Code received " />
+                                placeholder="Enter Mpesa Code received " />
                             <span class="input-border input-border-alt"></span>
                         </div>
-                        
+
                         <input hidden type="text" id="mac2" value='$(mac)'>
                         <button class="btn-reconnect text-space" id="reconnect-form">Reconnect </button>
                     </div>
                 </div>
-                
+
             </div>
 
         </div>
         <!-- login and voucher recharge -->
-        <div class="flex gap-10 justify-between p-30">
-            <div class=" login border-right pr-30 w-half">
+        <div class="voucher-login flex gap-10 justify-between p-30">
+            <div class="voucher login border-right pr-30 w-half">
                 <p class=" text-center font-gray font-bold" style="font-size: 25px;"><small>Voucher recharge</small></p>
                 <p class="text-center text-black">Call admin for voucher recharge incase your payment is not
                     successful</p>
@@ -366,12 +371,13 @@
                 <button class="btn btn-login text-space m-20" id="voucher-form">Activate voucher </button>
             </div>
 
-            <div class="login card2 w-half">
+            <div class="account login w-half">
 
-                <form class="login" name="login" action="$(link-login-only)" method="post"> <input type="hidden" name="dst"
-                        value="$(link-orig)" />
+                <form class="login" name="login" action="$(link-login-only)" method="post"> <input type="hidden"
+                        name="dst" value="$(link-orig)" />
                     <!-- <p class="logo-area text-center" id="wifi_name"></p> -->
-                    <p class=" text-center font-gray font-bold" style="font-size: 25px;"><small>Login into account</small></p>
+                    <p class=" text-center font-gray font-bold" style="font-size: 25px;"><small>Login into
+                            account</small></p>
 
                     <p class="text-center text-black">Please enter your username plus password to login.</p>
                     <input type="hidden" name="popup" value="true" />
@@ -379,15 +385,15 @@
                         <hr />
                         <input type="text" name="username" class="code" placeholder="Username" />
                         <input type="password" name="password" class="code" placeholder="Password" />
-    
-    
+
+
                     </div>
                     <button type="submit" class="btn btn-login text-space"> <b>LOGIN</b></button>
                 </form>
             </div>
         </div>
 
-        
+
 
 
 
@@ -482,7 +488,7 @@
                     })
                     month.map((limit_data) => {
                         $("#month_limit").append(`
-                                    <div onclick="dvalue(${limit_data.price})" class="packages">
+                                    <div onclick="dvalue(${limit_data.price})" class="packages-monthly">
                                     
                                         
                                         <p class="limit-text">${limit_data.quota_limit}</p>    
@@ -499,7 +505,7 @@
                     //         <p class="limit-text">${limit_data.quota_limit}</p>
                     //         <p class="package-text">${limit_data.package} @ ${data_q.price}/=</p>
                     //         <p class="speed-text">${limit_data.speeds}</p>
-                            
+
                     //     `)
                     // })
                     limit2.map((limit_data) => {
