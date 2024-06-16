@@ -1060,22 +1060,14 @@ hr {
     .packages{
         margin: 5px;
     }
-    .voucher-login{
-        flex-direction: column;
-    } 
-    .voucher{
-        border: none;
-    }
-    .account,.voucher{
-        width: 100%;
-    }
+    
     
 }
 
 @media only screen and (max-width: 768px) {
     body {
-        background-color: #fff;
-        background-image: url("background.png");
+        background-color: rgb(40, 71, 252);
+        /* background-image: url("background.png"); */
         /* background-repeat: no-repeat; */
         background-size: cover;
         padding-top: 0px;
@@ -1117,7 +1109,15 @@ hr {
         margin-bottom: 20px;
         max-width: 380px;
     }
-  
+    .voucher-login{
+        flex-direction: column;
+    } 
+    .voucher{
+        border: none;
+    }
+    .account,.voucher{
+        width: 100%;
+    }
     .account,.voucher, .packages-monthly{
         width: 100%;
     }
@@ -1167,6 +1167,15 @@ hr {
     }
     .voucher{
         border: none;
+    }
+    .voucher-login{
+        flex-direction: column;
+    } 
+    .voucher{
+        border: none;
+    }
+    .account,.voucher{
+        width: 100%;
     }
     .head{
         font-size: 25px;
@@ -1223,6 +1232,15 @@ hr {
     }
     .voucher{
         border: none;
+    }
+    .voucher-login{
+        flex-direction: column;
+    } 
+    .voucher{
+        border: none;
+    }
+    .account,.voucher{
+        width: 100%;
     }
     .account,.voucher, .packages-monthly{
         width: 100%;

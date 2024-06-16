@@ -19,7 +19,7 @@
     "paybill_no": "0",
     "quota": [{
             "quota_limit": "15Hours",
-            "price": "1",
+            "price": "40",
             "package":"6GB",
             "duration_limit": "15 hours",
             "speeds": "Speed 3mbps",
